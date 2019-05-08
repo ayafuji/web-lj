@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WEB LJ ~THE ANONYMOUS INTERFACE~</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="/stylesheets/site.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=no" >
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body style="text-align:center; background-image:url(/images/top.jpg); background-size:contain; background-size: contain;
+min-height: 568px;">
+    <div id="container">
+      <header>
+	<p id="logo">LJ.io</p>
+	<div class="row">
+	  <div class="span5" style="background-color:#333333; text-align:right; min-height: 30px; padding: 20px 10px 20px 0px;" >
+		<a href="./auth/twitter">LOGIN</a>
+	  </div>
+	</div>
+	<div id="explain">
+	To <a href="https://twitter.com/search?f=realtime&q=%23tokyo0505&src=tyah">#tokyo0505</a>, Light Jockey WEB GUI. You can join the act through the iPhone or Android device. Put your hands up!!
+	    <div id="device" style="font-size:10px;"></div>
+	</div>
+      </header>
+  </div>
+  </body>
+    <script>
+(function(){
+    var _UA = navigator.userAgent;
+    if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1) {
+  //document.getElementById("device").innerHTML = "iPhone";
+
+    }else if(_UA.indexOf('Android') > -1){
+  //document.getElementById("device").innerHTML = "android";
+
+    }else{
+  document.getElementById("device").innerHTML = "これはスマートフォン専用ウェブサービスです。iPhoneやAndroidからログインしてね";
+
+    }
+
+})();
+    </script>
+</html>
